@@ -27,6 +27,8 @@ This application has 6 mobility models  which you can change the duration [by de
 Available Mobility models: [1] StayingStillWithoutYawFor3minutes , [2] StayingStillWithYawFor3minutes , [3] RandomWalkFor3minutes
 [4] RandomRunFor3minutes , [5] RandomFlyFor3minutes , [6] RandomTeleportFor3minutes
 
+The application also load one NPC statbot (this account should be created in OpenSim). Check NPCForStats.cs to see what could be done. This NPC capture simulator QoS (Quality of Service) metrics like FPS etc... every 5 seconds and then save all these metrics into one CSV file so that it could be fetched to a statistical tool like R, SPSS etc... 
+
 Enjoy!
 
 Technicalities
@@ -59,4 +61,10 @@ TODO
 1)I will create later the same application with IronPython for Python lovers out there (including me)! allowing you to create Python NPC bots!
 
 2) Solve problem of System.Windows.Forms for Mono framework.
+
+3)An extension to this is to give this statistic NPC a mobility of its own
+
+4) Retrieve Client side specific QoS (similar to the ones that we can get from SL Viewer) - it is known that the server sends stats about itself to the client periodically.
+ 
+ In other words, TO BE ABLE to save or log the statistics given by the Second Life viewer (The ones available in the Advanced Menu, under Performance Tools) into text files or CSV files etc...so they could be fetched to a statistical tool - does libOpenMetaverse provide them and to which extent?
 
