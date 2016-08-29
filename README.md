@@ -18,7 +18,7 @@ A C# application that allows you to load  Non-Player Characters (NPC bots) as ma
 libOMVMobilityModels uses LibOpenMetaverse Release 0.9.3 that can be found: https://github.com/openmetaversefoundation/libopenmetaverse
 LibOpenMetaverse is a C# client side library for accessing OpenSim and Second Life.
 
-This application is the result of complete days of work. LibOpenMetaverse is not well documented as you will probably figure out so this application will be a starting point for you to expand on, change and enhance. It is not perfect but do the job.
+This application is the result of complete days of work. LibOpenMetaverse is not well documented as you will probably figure out so this application will be a starting point for you to expand on, change and enhance. This program can be improved in many ways (it is not perfect and never meant to be).
 
 In summary, the application allows you to load  Non-Player Characters (NPC bots) as many as you want. It reads their accounts information from a CSV file. I have a Linux bash shell script (see https://github.com/HusseinBakri/CreateXUserAccountsForOpenSim) that allows you to create as many NPC accunts for OpenSim as you want and save their info into a CSV file which could be fetched easly in this application without you to worry about anything. 
 I will write a similar script for MS Windows users either in PowerShell or Batch. I will see how it can be done.
