@@ -44,17 +44,19 @@ OpenMetaverse.dll, OpenMetaverseTypes.dll, OpenMetaverse.StructuredData.dll, Ope
 
 3)All above dlls are obtained from the libopenmetaverse source folder "only after" libopenmetaverse being build adequately depending on your target OS
 
-4) Add also System.Windows.Forms ( in VS 2015 references) -- I have used the FolderBrowserDialog() to make the app not dependant on OS for opening the CSV file - it is uncommented in the code so that it works in Mono framework (On Linux and Mac OS)
-TODO: Solve problem of System.Windows.Forms on Mono Linux
+4) Add also System.Windows.Forms ( in VS 2015 references) -- I have used the FolderBrowserDialog() to make the app not dependant on OS for opening the CSV file - it is uncommented in the code so that it works in Mono framework (On Linux and Mac OS).
 
 5) One last important thing: (without this step - the NPC avatars will apear naked after being baked see: https://github.com/openmetaversefoundation/libopenmetaverse/releases
+
 Solution:
 Go to the libopenmetaverse source folder and after you have build it adequately depending on the OS, you should go the bin folder there and copy "openmetaverse_data" folder which contains the clothes of avatars among other things (.tga files needed like  glove_lenth_alpha.tga and shirt_collar_alpha.tga etc..)
 Paste this folder in the bin directory of "this" project (whether on VS 2015 or MonoDevelop), merge and copy and replace existing files, becuase you might already see a folder of the same name in this project.
 
- Enjoy!
+Enjoy!
  
 TODO
 -----
 1)I will create later the same application with IronPython for Python lovers out there (including me)! allowing you to create Python NPC bots!
+
+2) Solve problem of System.Windows.Forms for Mono framework.
 
