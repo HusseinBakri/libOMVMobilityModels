@@ -1,0 +1,9 @@
+This folder is empty becuase it contains more than 300 files and GitHub deos not allow such upload of files
+
+Please copy the folder named "openmetaverse_data"  from LibOpenMetaverse [after you build the library successfully depending on your OS]
+to here or to the Visual Studio bin folder, to solve the problem of naked avatars.
+
+Also don't forget to add as references in your MS Visual Studio the following dlls:
+"openjpeg-dotnet.dll" and openjpeg-dotnet-x86_64.dll otherwise your avatars will look like clouds.
+
+Enjoy!
