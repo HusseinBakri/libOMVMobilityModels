@@ -23,16 +23,18 @@ This application is the result of complete days of work. LibOpenMetaverse is not
 In summary, the application allows you to load  Non-Player Characters (NPC bots) as many as you want. It reads their accounts information from a CSV file. I have a Linux bash shell script (see https://github.com/HusseinBakri/CreateXUserAccountsForOpenSim) that allows you to create as many NPC accunts for OpenSim as you want and save their info into a CSV file which could be fetched easly in this application without you to worry about anything. 
 I will write a similar script for MS Windows users either in PowerShell or Batch. I will see how it can be done.
 This application has 6 mobility models  which you can change the duration [by default 3 minutes (180000 milliseconds)] - Yaw is the change is the avatar gaze direction
+
 Available Mobility models: [1] StayingStillWithoutYawFor3minutes , [2] StayingStillWithYawFor3minutes , [3] RandomWalkFor3minutes
 [4] RandomRunFor3minutes , [5] RandomFlyFor3minutes , [6] RandomTeleportFor3minutes
+
 Enjoy!
 
 Technicalities
 -------------
-This application is built in Visual Studio Comunity 2015. I did not tried it yet on MonoDevelop but probably it will work. 
+This application is built in Visual Studio Comunity version 2015. I did not tried it yet on MonoDevelop but probably it will work. 
 
-Important notes before you compile and run this app
-----------------------------------------------------
+Important notes before you compile and run this application
+----------------------------------------------------------
 Please make sure you add the following references before you can run this program : [In Visual Studio Comunity 2015, right click on References and Choose Add References]
 
 1) For OpenMetaverse libraries to work, kindly add the following references as dlls files (add them in VS Comunity 2015 references):
